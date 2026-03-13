@@ -13,13 +13,69 @@ struct producto
     bool f_vencimiento;
 };
 
+int GondolaMayor(producto supermercado[][4], int filas)
+{
+
+    int columnaMayor = 0;
+    int precioMayor = 0;
+    f12or (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < supermercado[2][3]; j++)
+        {
+            if (supermercado[j][i].precio > precioMayor)
+            {
+                columnaMayor = i;
+                precioMayor = supermercado[j][i].precio;
+            }
+        }
+    }
+
+    cout << "La columna con el producto mas caro es " << columnaMayor << endl;
+}
+
+void mostrarProd(producto supermercado[][4], int filas)
+{
+
+    cout << supermercado[2][3].nombre << endl;
+}
+
+void promedio(producto supermercado[][4], int filas)
+{
+
+    float promedio = 0;
+
+    for (int i = 0; i < 4; i++)
+    {
+        promedio = promedio + supermercado[2][i].precio;
+    }
+    promedio = promedio / 4;
+    cout << promedio << endl;
+}
+
+void prodVencidos(producto supermercado[][4], int filas)
+{
+
+    int cont = 0;
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+
+            if (supermercado[j][i].f_vencimiento == true)
+            {
+                cont++;
+            }
+        }
+    }
+    cout << "la cantidad de productos vencidos es :" << cont << endl;
+}
 int main(void)
 {
 
     producto supermercado[3][4] = {
 
         {{"leche", 1001, "LaSerenisima", 1200, true},
-         {"pan", 1002, "Bimbo", 900, true},
+         {"pan", 1002, "Bomboclat", 900, true},
          {"galletitas", 1003, "Oreo", 1500, true},
          {"yogur", 1004, "Danone", 1100, true}},
 
@@ -35,42 +91,8 @@ int main(void)
 
     };
 
-    int columnaMayor = 0;
-    int precioMayor = 0;
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < supermercado[2][3]; j++)
-        {
-            if (supermercado[j][i].precio > precioMayor)
-            {
-                columnaMayor = i;
-                precioMayor = supermercado[j][i].precio;
-            }
-        }
-    }
-
-    cout << "La columna con el producto mas caro es " << columnaMayor << endl;
-    cout << supermercado[2][3].nombre << endl;
-
-    float promedio = 0;
-
-    for (int i = 0; i < 4; i++)
-    {
-        promedio = promedio + supermercado[2][i].precio;
-    }
-    promedio = promedio / 4;
-    cout << promedio << endl;
-
-    int cont = 0;
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            if (supermercado[j][i].f_vencimiento == true)
-            {
-                cont++;
-            }
-        }
-    }
-    cout << "la cantidad de productos vencidos es :" << cont << endl;
+    GondolaMayor(supermercado[3][4]);
+    mostrarProd(supermercado[3][4]);
+    promedio(supermercado[3][4]);
+    prodVencidos(supermercado[3][4]);
 }

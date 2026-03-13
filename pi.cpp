@@ -10,7 +10,7 @@ struct Empleado
     string nombre;
     string apellido;
     int FDN;
-    string sexo;
+    string muchosexogay;
 };
 
 Empleado empleadoConMayorSueldo(vector<Empleado> empleado, vector<Empleado> &pocosueldo)
