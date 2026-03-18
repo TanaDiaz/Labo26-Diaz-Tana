@@ -15,6 +15,6 @@ public class IngresoDatos {
         System.out.println("La diferencia entre A y N es: " + resultado2);
         System.out.println("El valor numérico correspondiente al carácter que contiene la variable C es: " + c);
 
-
+        }
     }
-}
+
