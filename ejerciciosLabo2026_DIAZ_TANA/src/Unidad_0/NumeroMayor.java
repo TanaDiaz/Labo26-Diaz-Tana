@@ -10,7 +10,7 @@ public class NumeroMayor{
         if (V1 == V2){
             System.out.println("Ambos valores son iguales");
         }
-        if(V1 > V2){
+        else if(V1 > V2){
             System.out.println("El valor mas grande es: " + V1);
         }
         else{

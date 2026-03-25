@@ -10,8 +10,11 @@ public class DiaLaboral  {
         String dia = scanner.nextLine();
 
         if (!dia.equals("sabado") && !dia.equals("domingo")){
+            System.out.println("dia laboral");
 
-
+        }
+        else{
+            System.out.println("fin de semana");
         }
     }
 }
