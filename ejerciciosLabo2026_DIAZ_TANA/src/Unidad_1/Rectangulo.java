@@ -13,23 +13,23 @@ public Rectangulo(float altura , float base ) {
         return altura;
     }
 
-    public float GetBase(){
+    public float getBase(){
     return base;
 }
 
- public void SetAltura(float altura) {
+ public void setAltura(float altura) {
      this.altura = altura;
  }
-    public void SetBase(float base) {
+    public void setBase(float base) {
         this.base = base;
     }
 
-    float CalcularArea (float altura , float base){
+    float calcularArea (float altura , float base){
     float area = (base * altura);
     return area;
     }
 
-    float CalcularPerimetro (float altura , float base){
+    float calcularPerimetro (float altura , float base){
         float  perimetro = 2*(base + altura);
         return perimetro;
     }

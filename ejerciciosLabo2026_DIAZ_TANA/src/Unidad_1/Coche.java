@@ -2,10 +2,16 @@ package Unidad_1;
 
 public class Coche {
 
-    String marca;
-    String modelo;
-    String color;
+   private String marca;
+   private String modelo;
+   private String color;
 
 
-    public 
+    public Coche(String marca, String modelo, String color) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+    }
+
+    public String
 }
