@@ -12,7 +12,7 @@ public class Circulo {
         this.radio = radio;
     }
 
-    public float setCirculo() {
+    public float getCirculo() {
         return radio;
     }
 
