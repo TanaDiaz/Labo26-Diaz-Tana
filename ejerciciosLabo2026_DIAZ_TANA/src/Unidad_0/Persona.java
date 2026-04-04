@@ -11,6 +11,12 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    public Persona() {
+        this.nombre = "Adam Sandler";
+        this.edad = "69";
+        this.direccion = "Olavarria 911";
+    }
+
     public void imprimirDatos() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
