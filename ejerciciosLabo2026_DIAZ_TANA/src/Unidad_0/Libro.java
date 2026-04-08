@@ -1,4 +1,4 @@
-package Unidad_1;
+package Unidad_0;
 
 import Unidad_0.Persona;
 
@@ -25,9 +25,9 @@ public class Libro
 
     public Libro(){
         this.titulo = "Libro";
-        this.autor = "Marcos Perez Jimenez";
-        this.ISBN = "0000000000000000";
-        this.cantPags = "100";
+        this.autor = new Persona();
+        this.ISBN = 0000000000000000;
+        this.cantPags = 100;
         this.editorial = "Alianza editorial";
         this.fechaPubli = LocalDate.of(1900, 1, 1);
     }

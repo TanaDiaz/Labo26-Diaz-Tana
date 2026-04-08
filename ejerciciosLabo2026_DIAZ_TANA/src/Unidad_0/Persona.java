@@ -13,7 +13,7 @@ public class Persona {
 
     public Persona() {
         this.nombre = "Adam Sandler";
-        this.edad = "69";
+        this.edad = 69;
         this.direccion = "Olavarria 911";
     }
 

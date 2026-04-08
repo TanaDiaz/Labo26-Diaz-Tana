@@ -1,4 +1,4 @@
-package Unidad_1;
+package Unidad_0;
 
 public class Rectangulo {
     private float altura;
