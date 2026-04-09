@@ -14,7 +14,7 @@ public class DivisibleForDivisibleWhile {
 
         while (j <= 100) {
             if (j % 2 == 0 && j % 3 == 0) {
-                System.out.println(i);
+                System.out.println(j);
             }
             j++;
         }

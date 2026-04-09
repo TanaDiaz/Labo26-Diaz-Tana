@@ -13,7 +13,7 @@ public class ReemplazoLetra {
 
          if(texto.charAt(i) == 'e') reemplazo += c;
 
-         else reemplazo += texto.charAt[i];
+         else reemplazo += texto.charAt(i);
      }
     }
 }
