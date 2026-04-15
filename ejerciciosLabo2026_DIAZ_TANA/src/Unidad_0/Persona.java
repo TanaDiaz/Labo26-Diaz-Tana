@@ -17,6 +17,13 @@ public class Persona {
         this.direccion = "Olavarria 911";
     }
 
+    public int getEdad(){
+        return edad;
+    }
+    public int getNombre(){
+        return nombre;
+    }
+
     public void imprimirDatos() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);

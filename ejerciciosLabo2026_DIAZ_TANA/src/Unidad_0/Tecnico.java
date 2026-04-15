@@ -102,5 +102,4 @@ public class Tecnico {
 
         tecnico1.getCoheteAsig().calculartime(10000);
     }
-
 }
