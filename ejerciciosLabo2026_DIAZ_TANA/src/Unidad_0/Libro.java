@@ -1,6 +1,4 @@
-package Unidad_0;
-
-import Unidad_0.Persona;
+/*package Unidad_0;
 
 import java.time.LocalDate;
 
@@ -116,3 +114,5 @@ public class Libro
         libro.mostrarDatos();
     }
 }
+
+ */
