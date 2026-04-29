@@ -1,4 +1,4 @@
-package Unidad_0;
+package Basico;
 import java.util.Scanner;
 
 public class ReemplazoLetra {

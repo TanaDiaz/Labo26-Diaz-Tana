@@ -1,8 +1,4 @@
-package Unidad_0;
-
-import org.w3c.dom.ls.LSOutput;
-
-import java.time.LocalDate;
+package Objetos;
 
 public class Museo {
     private String titulo;

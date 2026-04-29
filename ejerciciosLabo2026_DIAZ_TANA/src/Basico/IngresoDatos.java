@@ -1,4 +1,4 @@
-package Unidad_0;
+package Basico;
 
 public class IngresoDatos {
     public static void main(String[] args) {

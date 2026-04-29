@@ -1,5 +1,5 @@
-package Unidad_0;
-import java.util.Scanner;
+package Objetos;
+
 public class Vocales {
     public static void main(String[] args) {
 

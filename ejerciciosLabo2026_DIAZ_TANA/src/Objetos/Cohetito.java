@@ -1,6 +1,4 @@
-package Unidad_0;
-
-import java.util.Scanner;
+package Objetos;
 
 public class Cohetito {
     private String nombre;

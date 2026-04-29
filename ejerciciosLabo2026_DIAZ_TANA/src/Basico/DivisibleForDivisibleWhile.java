@@ -1,4 +1,4 @@
-package Unidad_0;
+package Basico;
 
 public class DivisibleForDivisibleWhile {
     public static void main(String[] args) {
@@ -17,6 +17,5 @@ public class DivisibleForDivisibleWhile {
                 System.out.println(j);
             }
             j++;
-        }
     }
-}
+

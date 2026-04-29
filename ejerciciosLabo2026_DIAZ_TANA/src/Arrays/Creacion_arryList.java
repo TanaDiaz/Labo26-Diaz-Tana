@@ -1,4 +1,4 @@
-package CD;
+package Arrays;
 
 import java.util.ArrayList;
 

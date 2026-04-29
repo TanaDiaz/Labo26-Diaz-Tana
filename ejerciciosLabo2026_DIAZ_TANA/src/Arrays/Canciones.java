@@ -1,4 +1,4 @@
-package CD;
+package Arrays;
 
 public class Canciones {
 

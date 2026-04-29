@@ -1,6 +1,7 @@
-package Unidad_0;
+package Personas;
 
-import java.security.PublicKey;
+import Objetos.Cohetito;
+
 import java.time.LocalDate;
 
 public class Tecnico {
