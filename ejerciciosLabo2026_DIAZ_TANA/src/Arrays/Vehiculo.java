@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.ArrayList;
 
 class Vehiculo {
@@ -222,10 +224,8 @@ class Empresa {
         for (Vehiculo v : listaVehiculos) {
 
             if (v instanceof Auto) {
-
                 Auto a = (Auto) v;
 
-                totalAutos++;
 
                 if (a.isDescapotable()) {
                     descapotables++;
@@ -247,7 +247,6 @@ class Empresa {
     }
 }
 
-public class Main {
 
     public static void main(String[] args) {
 
