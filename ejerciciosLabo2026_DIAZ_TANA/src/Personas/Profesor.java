@@ -1,21 +1,12 @@
 package Personas;
 
-public class Profesor extends Persona {
-
-    private int porcentajeDesc;
+public class Profesor extends PersonaEducativa{
 
 
-    public Profesor(nombre, apellido, porcentajeDesc) {
 
-        super(nombre,apellido);
-        this.porcentajeDesc = porcentajeDesc;
-    }
+    public Profesor(String nombre, String apellido, double descuento) {
 
-    public int getPorcentajeDesc() {
-        return porcentajeDesc;}
-
-    public void setPorcentajeDesc(int porcentajeDesc) {
-        this.porcentajeDesc = porcentajeDesc;
+        super(nombre,apellido,descuento);
     }
 }
 

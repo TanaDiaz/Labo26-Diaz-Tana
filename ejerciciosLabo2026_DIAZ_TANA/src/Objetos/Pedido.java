@@ -1,18 +1,79 @@
 package Objetos;
 
+import Personas.Persona;
+
 import java.util.ArrayList;
 
 public class Pedido {
 
-
     private String fechaP;
-    private
-    Al cargarse un pedido se incluye la fecha de creación, el plato, la persona que lo
-    pidió, hora de entrega y si fue entregado o no. En el sistema debe existir un menú
-    de platos donde se puedan agregar, modificar y eliminar platos y una lista de los
-    pedidos.
-            Así, se solicita extraer un listado de los platos a cocinar en un día determinado
-    con su precio final (considerando si tiene descuento o no). Por otro lado, se debe
-    poder marcar un pedido como entregado y listar pedidos pendientes de entrega.
-    Por último, se solicita un top 3 de los platos más pedidos.
+    private ArrayList<Plato> platos;
+    private String horaEntrega;
+    private boolean entregado;
+    private Persona nombre;
+    private Persona apellido;
+
+    public Pedido(String fechaP, ArrayList<Plato> platos, String horaEntrega, boolean entregado, Persona nombre, Persona apellido) {
+        this.fechaP = fechaP;
+        this.platos = platos;
+        this.horaEntrega = horaEntrega;
+        this.entregado = entregado;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public String getFechaP() {
+        return fechaP;
+    }
+
+    public void setFechaP(String fechaP) {
+        this.fechaP = fechaP;
+    }
+
+    public ArrayList<Plato> getPlatos() {
+        return platos;
+    }
+
+    public void setPlatos(ArrayList<Plato> platos) {
+        this.platos = platos;
+    }
+
+    public String getHoraEntrega() {
+        return horaEntrega;
+    }
+
+    public void setHoraEntrega(String horaEntrega) {
+        this.horaEntrega = horaEntrega;
+    }
+
+    public boolean isEntregado() {
+        return entregado;
+    }
+
+    public void setEntregado(boolean entregado) {
+        this.entregado = entregado;
+    }
+
+    public Persona getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(Persona nombre) {
+        this.nombre = nombre;
+    }
+
+    public Persona getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(Persona apellido) {
+        this.apellido = apellido;
+    }
+
+    public double calcularPrecioFinal() {
+        double total = 0;
+        for (Plato p : platos) {
+            total += p.getPrecio();
+        }
+    }
 }
