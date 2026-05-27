@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class SensorComplejo {
 
     private ArrayList<Sensor> sensores;
+    private float umbral;
 
     public SensorComplejo(ArrayList<Sensor> sensores) {
         super();
@@ -16,22 +17,23 @@ public class SensorComplejo {
         sensores.add(s);
     }
 
-    @Override
-    public void verificarMedicion(){
-        int sensorActual = 0;
-        int sumaSensores = 0;
+    public void verificarMediciones() {
+        float sensorActual = 0;
+        float sumaSensores = 0;
         int cont = 0;
-        int promedioMediciones = 0;
+        float promedioMediciones = 0;
 
-        for(ArrayList<Sensor> sensores: s){
-        sensorActual = sensores.get(s);
-        sumaSensores = sumaSensores + sensorActual;
-        cont++;
+        for (Sensor sensor : sensores) { //S1, S2, S3
+            sensorActual = sensor.getMedicion();
+            sumaSensores = sumaSensores + sensorActual;
+            cont++;
         }
-        promedioMediciones = sumaSensores/cont;
+        promedioMediciones = sumaSensores / cont;
 
-        if(promedioMediciones > this.getUmbral()){
-            sonarAlarma();
+        if (promedioMediciones > this.umbral) {
+            for (Sensor sensor : sensores) { //S1, S2, S3
+                sensor.sonarAlarma();
+            }
         }
     }
 }

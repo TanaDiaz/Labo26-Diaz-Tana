@@ -31,19 +31,4 @@ public class Buffet {
         pedidosLista.remove(indice);
     }
 
-    public int precioPedidoDia() {
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
- */
 }
