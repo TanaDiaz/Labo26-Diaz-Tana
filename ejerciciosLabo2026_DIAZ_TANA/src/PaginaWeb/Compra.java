@@ -6,12 +6,12 @@ public class Compra {
     private String nombreC;
     private String apellidoC;
     private String telefonoC;
-    private String metodoPago;
+    private MetodoDePago metodoPago;
     private ArrayList<Componentes> productos;
     private Boolean valida;
 
 
-    public Compra(String nombreC, String apellidoC, String telefonoC, String metodoPago, ArrayList<Componentes> productos, Boolean valida) {
+    public Compra(String nombreC, String apellidoC, String telefonoC, MetodoDePago metodoPago, ArrayList<Componentes> productos, Boolean valida) {
         this.nombreC = nombreC;
         this.apellidoC = apellidoC;
         this.telefonoC = telefonoC;
@@ -45,11 +45,11 @@ public class Compra {
         this.telefonoC = telefonoC;
     }
 
-    public String getMetodoPago() {
+    public MetodoDePago getMetodoPago() {
         return metodoPago;
     }
 
-    public void setMetodoPago(String metodoPago) {
+    public void setMetodoPago(MetodoDePago metodoPago) {
         this.metodoPago = metodoPago;
     }
 
@@ -69,10 +69,25 @@ public class Compra {
         this.valida = valida;
     }
 
-    public boolean validarCompra(){
-        if(this.metodoPago.equals("Efectivo")){
-
+    public double calcularMonto(){
+        double monto = 0;
+        for(Componentes componente: productos){
+          monto += componente.getPrecio();
         }
+        return monto;
+    }
+
+
+    public boolean validarCompra(double monto){
+        if(metodoPago.getRecargo() > 0){
+            monto = monto+(monto*0.05);
+        }
+
+
+
+
+
+
 
     }
 

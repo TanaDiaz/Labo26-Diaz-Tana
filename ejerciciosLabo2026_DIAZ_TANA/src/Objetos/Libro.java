@@ -1,18 +1,20 @@
-/*package Unidad_0;
+package Objetos;
+
+import Personas.Persona;
 
 import java.time.LocalDate;
 
 public class Libro
 {
     private String titulo;
-    private Unidad_0.Persona autor;
+    private Persona autor;
     private int ISBN;
     private int cantPags;
     private String editorial;
     private LocalDate fechaPubli;
 
 
-    public Libro(String titulo, Unidad_0.Persona autor, int ISBN, int cantPags, String editorial, LocalDate fechaPubli){
+    public Libro(String titulo, Persona autor, int ISBN, int cantPags, String editorial, LocalDate fechaPubli){
         this.titulo = titulo;
         this.autor = autor;
         this.ISBN = ISBN;
@@ -34,7 +36,7 @@ public class Libro
         this.titulo = titulo;
         this.ISBN = ISBN;
     }
-    public Libro(String editorial, Unidad_0.Persona autor){
+    public Libro(String editorial, Persona autor){
         this.editorial = editorial;
         this.autor = autor;
     }
