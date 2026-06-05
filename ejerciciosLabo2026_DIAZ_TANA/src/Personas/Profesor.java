@@ -9,6 +9,3 @@ public class Profesor extends PersonaEducativa{
         super(nombre,apellido,descuento);
     }
 }
-
-
-
