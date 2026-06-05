@@ -1,5 +1,11 @@
 package Enums;
 
 public enum Editorial {
-    Kapelusz, Sudamericana, Atlántida, elAteneo, Interzona, Sur, Alianza
+    KAPELUSZ,
+    SUDAMERICANA,
+    ATLANTIDA,
+    EL_ATENEO,
+    INTERZONA,
+    SUR,
+    ALIANZA
 }

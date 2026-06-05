@@ -18,6 +18,10 @@ public class Persona {
     public Persona(String nombre, String apellido) {
     }
 
+    public Persona() {
+
+    }
+
     public int getEdad() {
         return edad;
     }
