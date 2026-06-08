@@ -1,18 +1,21 @@
-/*package Unidad_0;
+package Objetos;
+
+import Enums.Editorial;
+import Personas.Persona;
 
 import java.time.LocalDate;
 
 public class Libro
 {
     private String titulo;
-    private Unidad_0.Persona autor;
+    private Persona autor;
     private int ISBN;
     private int cantPags;
-    private String editorial;
+    private Editorial editorial;
     private LocalDate fechaPubli;
 
 
-    public Libro(String titulo, Unidad_0.Persona autor, int ISBN, int cantPags, String editorial, LocalDate fechaPubli){
+    public Libro(String titulo, Persona autor, int ISBN, int cantPags, Editorial editorial, LocalDate fechaPubli){
         this.titulo = titulo;
         this.autor = autor;
         this.ISBN = ISBN;
@@ -24,9 +27,9 @@ public class Libro
     public Libro(){
         this.titulo = "Libro";
         this.autor = new Persona();
-        this.ISBN = 0000000000000000;
+        this.ISBN = 00000000000000067;
         this.cantPags = 100;
-        this.editorial = "Alianza editorial";
+        this.editorial = Editorial.ALIANZA;
         this.fechaPubli = LocalDate.of(1900, 1, 1);
     }
 
@@ -34,7 +37,7 @@ public class Libro
         this.titulo = titulo;
         this.ISBN = ISBN;
     }
-    public Libro(String editorial, Unidad_0.Persona autor){
+    public Libro(Editorial editorial, Persona autor){
         this.editorial = editorial;
         this.autor = autor;
     }
@@ -59,7 +62,7 @@ public class Libro
         return fechaPubli;
     }
 
-    public String getEditorial() {
+    public Editorial getEditorial() {
         return editorial;
     }
 
@@ -71,7 +74,7 @@ public class Libro
         this.cantPags = cantPags;
     }
 
-    public void setEditorial(String editorial) {
+    public void setEditorial(Editorial editorial) {
         this.editorial = editorial;
     }
 
@@ -105,7 +108,7 @@ public class Libro
         Libro libro = new Libro();
         Persona autor1 = new Persona();
         LocalDate fechaPubli1 = LocalDate.of(1922,2,4);
-        Libro libro2 = new Libro("La Venganza de los Chamos 11", autor1, 74822348, 434, "Papu Editorial", fechaPubli1);
+        Libro libro2 = new Libro("La Venganza de los Chamos 11", autor1, 74822348, 434, Editorial.ALIANZA, fechaPubli1);
 
         boolean anterior = libro.esAnterior(libro2);
         if(anterior == true) System.out.println("Efectivamente es anterior");
@@ -114,5 +117,3 @@ public class Libro
         libro.mostrarDatos();
     }
 }
-
- */

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://gas/Labo26-Diaz-Tana/ejerciciosLabo2026_DIAZ_TANA/Cocina/Cocina.iml" filepath="gas/Labo26-Diaz-Tana/ejerciciosLabo2026_DIAZ_TANA/Cocina/Cocina.iml" />
       <module fileurl="file://$PROJECT_DIR$/ejerciciosLabo2026_DIAZ_TANA.iml" filepath="$PROJECT_DIR$/ejerciciosLabo2026_DIAZ_TANA.iml" />
     </modules>
   </component>

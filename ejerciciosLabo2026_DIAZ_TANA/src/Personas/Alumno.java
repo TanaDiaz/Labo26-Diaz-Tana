@@ -1,11 +1,11 @@
 package Personas;
 
-public class Alumno extends Persona {
+public class Alumno extends PersonaEducativa {
 
     private String division;
 
-    public Alumno(nombre, apellido, division){
-        super(nombre,apellido);
+    public Alumno(String nombre, String apellido, double descuento, String division){
+        super(nombre,apellido, descuento);
         this.division=division;
     }
 

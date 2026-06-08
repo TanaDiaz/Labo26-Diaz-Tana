@@ -4,6 +4,7 @@ public class Persona {
 
     private int edad;
     private String nombre;
+    private String apellido;
     private String fechaN;
     private String dni;
 
@@ -12,6 +13,13 @@ public class Persona {
         this.nombre = nombre;
         this.fechaN = fechaN;
         this.dni = dni;
+    }
+
+    public Persona(String nombre, String apellido) {
+    }
+
+    public Persona() {
+
     }
 
     public int getEdad() {

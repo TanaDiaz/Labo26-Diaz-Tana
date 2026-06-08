@@ -91,7 +91,7 @@ public class Tecnico {
    public static void main(String[] args) {
         Cohetito cohete1 = new Cohetito( "orion v", 30000, 75, 9, 5);
         Cohetito cohete2 = new Cohetito( "Lunar x", 27500, 68, 8, 4);
-        Cohetito cohete3 = new Cohetito( "Cosmos Max",35000, 90, 11, 8);
+        Cohetito cohete3 = new Cohetito("Cosmos Max", 35000, 90, 11, 8);
         Tecnico tecnico1 = new Tecnico("robert", "Diaz", LocalDate.of(2000, 12, 12), "Propulsion", cohete1);
         Tecnico tecnico2 = new Tecnico("carlos", "Fuentes", LocalDate.of(2001, 12, 12), "Navegacion", cohete2);
 
@@ -100,6 +100,7 @@ public class Tecnico {
 
         tecnico1.Actibasion();
         tecnico2.Actibasion();
+
 
         tecnico1.getCoheteAsig().calculartime(10000);
     }
