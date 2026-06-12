@@ -1,6 +1,10 @@
+import EJ6.Producto;
+
+import java.util.ArrayList;
+
 public class Empresa {
 
-private ArrayList<Producto>productos;
+private ArrayList<Producto> productos;
 
 public Empresa(ArrayList<Producto>productos){
     this.productos = productos;
