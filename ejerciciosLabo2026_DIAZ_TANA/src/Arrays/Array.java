@@ -1,7 +1,7 @@
 
 import java.util.ArrayList;
 
-public class  Array {
+public class Rama {
 }
 
 static void main() {

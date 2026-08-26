@@ -31,7 +31,7 @@ public class CD {
 
     public void grabaCancion(int posición, ArrayList<String> nuevaCancion){
         cancion.remove(posición);
-        cancion.add(nuevaCancion);
+        cancion.add(String.valueOf(nuevaCancion));
 
     }
 }

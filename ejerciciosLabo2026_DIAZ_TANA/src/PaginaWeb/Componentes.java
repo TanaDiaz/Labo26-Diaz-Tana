@@ -7,7 +7,7 @@ public class Componentes {
     private int stock;
 
 
-    public Componentes (float precio, String modelo, String nombreFa, int stock){
+    public Componentes (String tipo, float precio, String modelo, String nombreFa, int stock){
 
         this.precio = precio;
         this.modelo = modelo;

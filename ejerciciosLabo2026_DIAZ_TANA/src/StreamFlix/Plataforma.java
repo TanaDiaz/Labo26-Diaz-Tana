@@ -28,6 +28,7 @@ public class Plataforma {
     public String nombreUltimoEpisodio(){
 
 
+        return "";
     }
 
 }

@@ -1,11 +1,12 @@
 package Personas;
 
-public class PersonaEducativa extends Persona
+public abstract class PersonaEducativa extends Persona
+
 {
     private double descuento;
 
     public PersonaEducativa(int edad, String nombre, double descuento) {
-        super(edad, nombre);
+        super(String.valueOf(edad), nombre);
         this.descuento = descuento;
     }
 
@@ -22,3 +23,6 @@ public class PersonaEducativa extends Persona
         this.descuento = descuento;
     }
 }
+
+
+

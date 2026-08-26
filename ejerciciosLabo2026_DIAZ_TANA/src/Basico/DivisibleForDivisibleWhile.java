@@ -17,5 +17,7 @@ public class DivisibleForDivisibleWhile {
                 System.out.println(j);
             }
             j++;
-    }
+        }
 
+    }
+}

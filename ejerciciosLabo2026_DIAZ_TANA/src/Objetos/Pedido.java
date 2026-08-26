@@ -75,5 +75,6 @@ public class Pedido {
         for (Plato p : platos) {
             total += p.getPrecio();
         }
+        return total;
     }
 }

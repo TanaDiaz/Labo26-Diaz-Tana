@@ -8,16 +8,16 @@ import java.time.LocalDate;
 public class Libro
 {
     private String titulo;
-    private Persona autor;
+    private String autor;
     private int ISBN;
     private int cantPags;
     private Editorial editorial;
     private LocalDate fechaPubli;
 
 
-    public Libro(String titulo, Persona autor, int ISBN, int cantPags, Editorial editorial, LocalDate fechaPubli){
+    public Libro(String titulo, String autor, int ISBN, int cantPags, Editorial editorial, LocalDate fechaPubli){
         this.titulo = titulo;
-        this.autor = autor;
+        this.autor = "autor";
         this.ISBN = ISBN;
         this.cantPags = cantPags;
         this.editorial = editorial;
@@ -26,7 +26,7 @@ public class Libro
 
     public Libro(){
         this.titulo = "Libro";
-        this.autor = new Persona();
+        this.autor = "dsad";
         this.ISBN = 00000000000000067;
         this.cantPags = 100;
         this.editorial = Editorial.ALIANZA;
@@ -39,7 +39,7 @@ public class Libro
     }
     public Libro(Editorial editorial, Persona autor){
         this.editorial = editorial;
-        this.autor = autor;
+        this.autor = "ffd";
     }
 
     public String getTitulo() {
@@ -54,7 +54,7 @@ public class Libro
         return cantPags;
     }
 
-    public Persona getAutor() {
+    public String getAutor() {
         return autor;
     }
 
@@ -66,7 +66,7 @@ public class Libro
         return editorial;
     }
 
-    public void setAutor(Persona autor) {
+    public void setAutor(String autor) {
         this.autor = autor;
     }
 
@@ -106,7 +106,7 @@ public class Libro
    public static void main(String[] args){
 
         Libro libro = new Libro();
-        Persona autor1 = new Persona();
+        String autor1 = "fds";
         LocalDate fechaPubli1 = LocalDate.of(1922,2,4);
         Libro libro2 = new Libro("La Venganza de los Chamos 11", autor1, 74822348, 434, Editorial.ALIANZA, fechaPubli1);
 

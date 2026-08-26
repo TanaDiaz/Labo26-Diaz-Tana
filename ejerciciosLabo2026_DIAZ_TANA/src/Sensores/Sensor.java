@@ -1,6 +1,8 @@
 package Sensores;
 
-public class Sensor {
+import java.util.ArrayList;
+
+public abstract class Sensor {
 
     private boolean conectado;
     private float medicion;
@@ -47,9 +49,8 @@ public class Sensor {
         this.umbral = umbral;
     }
 
-    public void sonarAlarma() {
-        System.out.println("Alarma");
-    }
+    public abstract void sonarAlarma();
+
 
     public void verificarMedicion() {
         if ((this.medicion > this.getUmbral() && this.conectado)) {

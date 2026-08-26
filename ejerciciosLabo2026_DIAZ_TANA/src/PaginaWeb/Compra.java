@@ -78,11 +78,6 @@ public class Compra {
     }
 
 
-    public boolean validarCompra(double monto){
-        if(metodoPago.getRecargo() > 0){
-            monto = monto+(monto*0.05);
-        }
-
 
 
 
@@ -103,4 +98,4 @@ public class Compra {
 
 
 
-}
+
