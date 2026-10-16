@@ -20,6 +20,9 @@ public abstract class Persona {
         this.peso = peso;
     }
 
+    public Persona(int edad, String nombre, String fechaN, String dni) {
+    }
+
     public int getPeso() {
         return peso;
     }
